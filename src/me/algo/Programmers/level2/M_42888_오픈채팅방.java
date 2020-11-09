@@ -2,6 +2,11 @@ package me.algo.Programmers.level2;
 
 import java.util.*;
 
+/* 오픈채팅방
+ * 2020. 11. 09
+ * https://programmers.co.kr/learn/courses/30/lessons/42888
+ */
+
 public class M_42888_오픈채팅방 {
     public static String[] solution(String[] record) {
         int size = 0;
