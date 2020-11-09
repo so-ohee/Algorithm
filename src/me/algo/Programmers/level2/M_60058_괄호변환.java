@@ -1,5 +1,10 @@
 package me.algo.Programmers.level2;
 
+/* 괄호변환
+ * 2020. 11. 06
+ * https://programmers.co.kr/learn/courses/30/lessons/60058
+ */
+
 public class M_60058_괄호변환 {
     public static String solution(String p) {
         return checkString(p);
