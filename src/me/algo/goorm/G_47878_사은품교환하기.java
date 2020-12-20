@@ -2,14 +2,14 @@ package me.algo.goorm;
 
 /* 사은품 교환하기
  * 2020. 12. 18
- * https://level.goorm.io/exam/43071/1c-%ED%99%94%ED%95%99-%EB%AC%BC%EC%A7%88/quiz/1
+ * https://level.goorm.io/exam/47878/%EC%82%AC%EC%9D%80%ED%92%88-%EA%B5%90%ED%99%98%ED%95%98%EA%B8%B0/quiz/1
  */
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class G_43071_사은품교환하기 {
+public class G_47878_사은품교환하기 {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine());
