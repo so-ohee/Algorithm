@@ -1,4 +1,4 @@
-package me.algo.goorm;
+package me.algo.Goorm;
 
 /* 최대 자리 곱
  * 2020. 12. 19

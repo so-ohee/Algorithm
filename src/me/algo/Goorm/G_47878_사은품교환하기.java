@@ -1,4 +1,4 @@
-package me.algo.goorm;
+package me.algo.Goorm;
 
 /* 사은품 교환하기
  * 2020. 12. 18

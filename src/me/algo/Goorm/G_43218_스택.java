@@ -1,4 +1,4 @@
-package me.algo.goorm;
+package me.algo.Goorm;
 
 /* 스택(Stack)
  * 2020. 12. 18
