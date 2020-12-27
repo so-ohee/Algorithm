@@ -5,16 +5,12 @@ package me.algo.LeetCode;
  * https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/
  */
 
-import java.util.Arrays;
-
 public class L_1689_PartitioningIntoMinimumNumberOfDeciBinaryNumbers {
     public static int solution(String n){
         int answer = 0;
         char[] arr =n.toCharArray();
-        System.out.println(Arrays.toString(arr));
         for(int i=0; i<arr.length; i++){
             int x = Character.getNumericValue(arr[i]);
-            System.out.println(x);
             if(x>answer) answer = x;
         }
         return answer;
