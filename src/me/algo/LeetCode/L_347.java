@@ -18,7 +18,7 @@ public class L_347 {
 
         int[] arr = new int[k];
         for(int i=0; i<arr.length; i++){
-            arr[i] = Integer.parseInt(String.valueOf(entries.get(i).getKey()));
+            arr[i] = entries.get(i).getKey();
         }
         return arr;
     }
