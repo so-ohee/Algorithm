@@ -1,7 +1,7 @@
 package me.algo.LeetCode;
 
 /* 763. Partition Labels
- * 2021. 01. 07
+ * 2021. 01. 12
  * https://leetcode.com/problems/partition-labels/
  */
 
