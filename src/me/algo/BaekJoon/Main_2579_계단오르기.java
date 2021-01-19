@@ -12,12 +12,12 @@ public class Main_2579_계단오르기 {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        int[] arr = new int[n];
+        int[] arr = new int[300];
         for(int i=0; i<n; i++){
             arr[i] = Integer.parseInt(br.readLine());
         }
 
-        int[] dp = new int[n];
+        int[] dp = new int[300];
         dp[0] = arr[0];
         dp[1] = Math.max(arr[0]+arr[1],arr[1]);
         dp[2] = Math.max(arr[0]+arr[2], arr[1]+arr[2]);
