@@ -1,12 +1,12 @@
 package me.algo.BaekJoon;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /* 계단 오르기
  * 2021. 01. 19
  * https://www.acmicpc.net/problem/2579
  */
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 
 public class Main_2579_계단오르기 {
     public static void main(String[] args) throws Exception{
