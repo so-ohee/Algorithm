@@ -8,6 +8,7 @@ import java.util.StringTokenizer;
 
 /* 신나는 함수 실행
  * 2021. 01. 13
+ * 2021. 02. 02
  * https://www.acmicpc.net/problem/9184
  */
 
