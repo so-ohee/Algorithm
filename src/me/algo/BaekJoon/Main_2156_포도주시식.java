@@ -2,7 +2,6 @@ package me.algo.BaekJoon;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 /* 포도주 시식
  * 2021. 02. 03
