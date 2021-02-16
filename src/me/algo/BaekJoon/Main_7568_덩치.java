@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /* 덩치
- * 2020. 12. 07
+ * 2021. 02. 16
  * https://www.acmicpc.net/problem/7568
  */
 
@@ -19,6 +19,7 @@ public class Main_7568_덩치 {
             arr[i][0] = Integer.parseInt(st.nextToken());
             arr[i][1] = Integer.parseInt(st.nextToken());
         }
+
         for(int i=0; i<n-1; i++){
             for(int j=i+1; j<n; j++){
                 if(arr[i][0]<arr[j][0]&&arr[i][1]<arr[j][1])
@@ -27,7 +28,21 @@ public class Main_7568_덩치 {
                     arr[j][2]++;
             }
         }
-        for(int i=0; i<n; i++)
-            System.out.print((arr[i][2]+1)+" ");
+        StringBuilder  sb= new StringBuilder();
+        for(int i=0; i<n; i++){
+            sb.append(arr[i][2]+1).append(" ");
+        }
+        System.out.print(sb.toString());
+
+//      2020. 12. 07
+//      for(int i=0; i<n; i++){
+//          for(int j=i+1; j<n; j++){
+//              if(arr[i][0]<arr[j][0]&&arr[i][1]<arr[j][1])
+//                  arr[i][2]++;
+//              else if(arr[i][0]>arr[j][0]&&arr[i][1]>arr[j][1])
+//                  arr[j][2]++;
+//          }
+//          System.out.print((arr[i][2]+1)+" ");
+//       }
     }
 }
