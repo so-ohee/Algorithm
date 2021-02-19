@@ -8,7 +8,7 @@ package me.algo.LeetCode;
 import java.util.*;
 
 public class L_594 {
-    public static int findLHS(int[] nums) {
+    public int findLHS(int[] nums) {
         Map<Integer,Integer> map = new HashMap<>();
         for(int i=0;i<nums.length;i++) {
             map.put(nums[i],map.getOrDefault(nums[i],0)+1);
@@ -21,11 +21,5 @@ public class L_594 {
             }
         }
         return max;
-    }
-    public static void main(String[] args) {
-        int[] n = {1,3,2,2,5,2,3,7};
-        System.out.println(findLHS(n));
-        int[] n2 = {1,2,3,4};
-        System.out.println(findLHS(n2));
     }
 }
