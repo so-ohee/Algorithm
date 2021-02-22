@@ -39,6 +39,6 @@ public class Main_15649_N과M_1 {
         M = Integer.parseInt(st.nextToken());
 
         dfs(0);
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 }
