@@ -12,7 +12,6 @@ import java.util.StringTokenizer;
 public class Main_15650_N과M_2 {
     static int N,M;
     static int arr[] = new int[9];
-    static boolean visit[] = new boolean[9];
     static StringBuilder sb = new StringBuilder();
 
     private static void dfs(int count, int index){
@@ -23,12 +22,8 @@ public class Main_15650_N과M_2 {
             return;
         }
         for(int i=index; i<=N; i++){
-            if(!visit[i]){
-                visit[i]=true;
-                arr[count]=i;
-                dfs(count+1,i+1);
-                visit[i]=false;
-            }
+            arr[count]=i;
+            dfs(count+1,i+1);
         }
     }
     public static void main(String[] args) throws Exception{
