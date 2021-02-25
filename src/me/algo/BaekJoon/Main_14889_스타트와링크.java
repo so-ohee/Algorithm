@@ -7,8 +7,6 @@ package me.algo.BaekJoon;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.StringTokenizer;
 
 public class Main_14889_스타트와링크 {
@@ -21,9 +19,9 @@ public class Main_14889_스타트와링크 {
             int start=0, link=0;
             for(int i=0; i<N-1; i++){
                 for(int j=i+1; j<N; j++){
-                    if(visit[i]==true && visit[j]==true){
+                    if(visit[i] && visit[j]){
                         start += (arr[i][j]+arr[j][i]);
-                    }else if(visit[i]==false && visit[j]==false){
+                    }else if(!visit[i] && !visit[j]){
                         link += (arr[i][j]+arr[j][i]);
                     }
                 }
@@ -35,7 +33,7 @@ public class Main_14889_스타트와링크 {
             }
             return;
         }
-        
+
         for(int i=index; i<N; i++){
             if(!visit[i]){
                 visit[i]=true;
