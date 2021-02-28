@@ -13,6 +13,7 @@ public class L_242 {
         char[] arrT = t.toCharArray();
         Arrays.sort(arrS);
         Arrays.sort(arrT);
-        return String.valueOf(arrS).equals(String.valueOf(arrT)) ? true : false;
+        return Arrays.equals(arrS,arrT);
+        //return String.valueOf(arrS).equals(String.valueOf(arrT));
     }
 }
