@@ -7,7 +7,6 @@ package me.algo.BaekJoon;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main_15658_연산자끼워넣기2 {
