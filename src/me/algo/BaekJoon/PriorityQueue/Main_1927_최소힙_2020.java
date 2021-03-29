@@ -1,4 +1,4 @@
-package me.algo.BaekJoon;
+package me.algo.BaekJoon.PriorityQueue;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.List;
  * https://www.acmicpc.net/problem/1927
  */
 
-public class Main_1927_최소힙 {
+public class Main_1927_최소힙_2020 {
     public static class minHeap{
         List<Integer> heap;
 
