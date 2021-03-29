@@ -1,4 +1,4 @@
-package me.algo.BaekJoon;
+package me.algo.BaekJoon.PriorityQueue;
 
 /* 절댓값 힙
  * 2020. 11. 11
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
-public class Main_11286_절댓값힙 {
+public class Main_11286_절댓값힙_2020 {
     public static class absoluteHeap {
         List<Integer> heap;
 
