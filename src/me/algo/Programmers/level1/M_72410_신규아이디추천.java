@@ -6,7 +6,7 @@ package me.algo.Programmers.level1;
  */
 
 public class M_72410_신규아이디추천 {
-    public static String solution(String new_id) {
+    public String solution(String new_id) {
         //1단계
         new_id = new_id.toLowerCase();
 
@@ -40,9 +40,5 @@ public class M_72410_신규아이디추천 {
             }
         }
         return new_id;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(solution("abcdefghijklmn.p"));
     }
 }
