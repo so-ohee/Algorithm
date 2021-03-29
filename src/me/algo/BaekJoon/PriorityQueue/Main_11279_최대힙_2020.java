@@ -1,4 +1,4 @@
-package me.algo.BaekJoon;
+package me.algo.BaekJoon.PriorityQueue;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -9,7 +9,7 @@ import java.util.*;
  * https://www.acmicpc.net/problem/11279
  */
 
-public class Main_11279_최대힙 {
+public class Main_11279_최대힙_2020 {
     public static class maxHeap {
         private List<Integer> heap;
 
