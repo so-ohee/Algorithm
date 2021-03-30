@@ -9,23 +9,17 @@ public class M_68936_쿼드압축후개수세기 {
     static int[][] array;
     static int[] answer = new int[2];
 
-    private static void dfs(int x, int y, int size) {
-        boolean zero = false;
-        boolean one = false;
-
+    private static boolean check(int x, int y, int size){
         for (int i = x; i < x + size; i++) {
             for (int j = y; j < y + size; j++) {
-                if (array[i][j] == 0) zero = true;
-                if (array[i][j] == 1) one = true;
+                if (array[i][j] != array[x][y]) return false;
             }
         }
-
-        if (zero && !one) {
-            answer[0]++;
-            return;
-        }
-        if (!zero && one) {
-            answer[1]++;
+        return true;
+    }
+    private static void dfs(int x, int y, int size) {
+        if (check(x,y,size)) {
+            answer[array[x][y]]++;
             return;
         }
 
