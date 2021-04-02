@@ -16,7 +16,7 @@ public class M_17677_뉴스클러스터링 {
         int sum = 0;
         Map<String,Integer> map1 = new HashMap<>();
         for(int i=0; i<str1.length()-1; i++){
-            String s = String.valueOf(str1.charAt(i))+String.valueOf(str1.charAt(i+1));
+            String s = str1.charAt(i)+""+str1.charAt(i+1);
             if(Pattern.matches("^[A-Z]*$", s)) {
                 map1.put(s, map1.getOrDefault(s, 0) + 1);
                 sum++;
@@ -24,7 +24,7 @@ public class M_17677_뉴스클러스터링 {
         }
         Map<String,Integer> map2 = new HashMap<>();
         for(int i=0; i<str2.length()-1; i++) {
-            String s = String.valueOf(str2.charAt(i)) + String.valueOf(str2.charAt(i + 1));
+            String s = str2.charAt(i)+""+str2.charAt(i+1);
             if (Pattern.matches("^[A-Z]*$", s)) {
                 map2.put(s, map2.getOrDefault(s, 0) + 1);
                 sum++;
