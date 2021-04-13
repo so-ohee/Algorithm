@@ -12,7 +12,6 @@ import java.util.StringTokenizer;
 public class Main_1010_다리놓기 {
     static int[][] dp;
     private static int solution(int n, int m){
-        System.out.println(n+", "+m+", "+dp[n][m]);
         if(m==0 || n==m) return dp[n][m] = 1;
         if(dp[n][m] != 0) return dp[n][m];
         return dp[n][m] = solution(n-1,m)+solution(n-1,m-1);
