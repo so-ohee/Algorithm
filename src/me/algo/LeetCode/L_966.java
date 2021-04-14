@@ -8,7 +8,7 @@ package me.algo.LeetCode;
 import java.util.*;
 
 public class L_966 {
-    private static String solution(String w){
+    private String solution(String w){
         StringBuilder sb = new StringBuilder();
         for(int i=0; i<w.length(); i++){
             char c = w.charAt(i);
@@ -18,7 +18,7 @@ public class L_966 {
         }
         return sb.toString();
     }
-    public static String[] spellchecker(String[] wordlist, String[] queries) {
+    public String[] spellchecker(String[] wordlist, String[] queries) {
         Set<String> set = new HashSet<>(Arrays.asList(wordlist));
         Map<String,String> case1 = new HashMap<>();
         Map<String,String> case2 = new HashMap<>();
@@ -43,11 +43,5 @@ public class L_966 {
             else queries[i] = "";
         }
         return queries;
-    }
-    public static void main(String[] args) {
-        String[] wordlist = {"KiTe", "kite", "hare", "Hare"};
-        String[] queries = {"kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto"};
-
-        System.out.println(Arrays.toString(spellchecker(wordlist,queries)));
     }
 }
