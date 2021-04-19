@@ -71,9 +71,9 @@ public class Main_1197_최소스패닝트리 {
     }
 
     private static void union(int a, int b){
-        int aRoot = find(a);
-        int bRoot = find(b);
+        a = find(a);
+        b = find(b);
 
-        if(aRoot != bRoot) parent[bRoot] = aRoot;
+        if(a != b) parent[a] = b;
     }
 }
