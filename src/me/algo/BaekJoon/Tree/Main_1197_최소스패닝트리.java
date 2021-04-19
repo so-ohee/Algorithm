@@ -51,13 +51,16 @@ public class Main_1197_최소스패닝트리 {
             pq.add(new Kruskal(a,b,c));
         }
 
-        int result = 0;
+        int result = 0, count = 0;
         for(int i=0; i<E; i++){
             Kruskal k = pq.poll();
             if(find(k.start) == find(k.end)) continue;
 
             union(k.start,k.end);
             result += k.weight;
+            count++;
+
+            if (count==V-1) break;
         }
         System.out.println(result);
     }
