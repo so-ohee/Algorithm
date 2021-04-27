@@ -12,7 +12,6 @@ import java.util.StringTokenizer;
 public class Main_11066_파일합치기 {
     static int K;
     static int[] arr;
-    static int[] sum;
     static StringBuilder sb = new StringBuilder();
 
     private static void solution() {
@@ -56,12 +55,13 @@ public class Main_11066_파일합치기 {
  * 참조 : https://m.blog.naver.com/tjdwns0920/221135677693
  */
 
-//    private static int sum(int s, int e){
+
+//    private static int sum(int s, int e, int[] sum){
 //        if(s==0) return sum[e];
 //        else return sum[e]-sum[s-1];
 //    }
 //    private static void solution(){
-//        sum = new int[K]; //sum 저장
+//        int[] sum = new int[K]; //sum 저장
 //        int[][] dp = new int[K][K]; //i~j까지 최소합
 //
 //        //i요소 까지 총합
@@ -80,7 +80,7 @@ public class Main_11066_파일합치기 {
 //                int j = i+gap;
 //                dp[i][j] = Integer.MAX_VALUE;
 //                for(int k=i; k<j; k++){
-//                    dp[i][j] = Math.min(dp[i][k]+dp[k+1][j]+sum(i,j),dp[i][j]);
+//                    dp[i][j] = Math.min(dp[i][k]+dp[k+1][j]+sum(i,j,sum),dp[i][j]);
 //                }
 //            }
 //        }
